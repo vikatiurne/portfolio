@@ -1,0 +1,133 @@
+:root {
+  --color1: #b5a5a5;
+  --color-red: #f47777;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 90vw;
+  width: 100%;
+}
+.portfolio__title {
+  margin: 1rem;
+  text-align: center;
+  color: var(--color1);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
+.controls {
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 0.1rem solid var(--color1);
+  border-top: 0.1rem solid var(--color1);
+}
+.controls button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  border: none;
+  color: var(--color-red);
+  background-color: transparent;
+}
+.controls button:hover {
+  color: #d45757;
+}
+.controls span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  color: var(--color1);
+}
+.content {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 70vh;
+}
+.box {
+  margin: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  max-width: 250px;
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.6),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s linear;
+  background-size: cover;
+}
+.filter{
+  position: absolute;
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.6),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+  background: rgba(248, 96, 96, 0.8);
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s linear;
+  transform: scale(0);
+}
+.filter p{
+  padding-top: 47%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+.box:hover .filter{
+opacity: 1;
+transform: scale(1);
+border-radius: 1rem;
+}
+.box:hover .filter p{
+opacity: 1;
+}
+
+#ex1{
+  background-image: url(../img/shower1.jpg);
+}
+#ex2{
+  background-image: url(../img/interior1.jpg);
+}
+#ex3{
+  background-image: url(../img/sliding1.jpg);
+}
+#ex4{
+  background-image: url(../img/balance1.jpg);
+}
+#ex5{
+  background-image: url(../img/sliding_track.jpg);
+}
+#ex6{
+  background-image: url(../img/roof1.jpg);
+}
+#ex7{
+  background-image: url(../img/fance2.jpg);
+}
+#ex8{
+  background-image: url(../img/fartuk.jpg);
+}
